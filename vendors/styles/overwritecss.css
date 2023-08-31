@@ -1,0 +1,25 @@
+.login-header {
+    display: flex;
+    position: relative;
+    padding: 0 15px;
+    background-color: transparent;
+    z-index: 1;
+}
+.brand-logo a img {
+    max-width: 180px;
+    display: flex;
+    height: auto;
+   
+}
+
+h2.Cname{
+
+
+    justify-content: center;
+    display:flex;
+    padding-left: 330px;
+    font-size: 25px;
+    color: #524d7d;
+     max-height: 300px;
+}
+

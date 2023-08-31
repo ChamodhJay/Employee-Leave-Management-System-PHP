@@ -1,0 +1,83 @@
+
+* {
+box-sizing: border-box;
+}
+.container,
+.form-box {
+display: block;
+width: 100%;
+}
+
+
+.form-box {
+
+display: flex;
+max-width: 430px;
+margin: 20px auto;
+border-radius: 30px;
+min-height: 200px;
+padding: 30px;
+background:whitesmoke;
+}
+.form-box .input-field {
+margin-bottom: 20px;
+position: relative;
+}
+.form-box input {
+display: block;
+min-height: 20px;
+font-size: 16px;
+padding: 10px;
+width: 100%;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+.form-box input[type='text'] {
+padding-right: 25px
+}
+.form-box h2 {
+display: block;
+text-align: center;
+font-size: 28px;
+margin-bottom: 40px;
+}
+.form-box label {
+font-size: 20px;
+color: #000000;
+margin-bottom: 5px;
+display: block;
+}
+.form-box input[type='submit'] {
+background: #1a9ae2;
+cursor: pointer;
+color: #fff;
+}
+.form-box .fa {
+position: absolute;
+right: 10px;
+margin-top: -30px;
+}
+.form-box .input-field.error input {
+border-color: #f00;
+border-width: 2px;
+}
+.form-box .input-field.error .fa {
+color: #f00;
+}
+.form-box .input-field.success input {
+border-color: #0b0;
+border-width: 2px;
+}
+.form-box .input-field.success .fa {
+color: #0b0;
+}
+.input-field span {
+display: none;
+}
+.input-field.error span {
+color: #f00;
+display: block
+}
+.input-field.success span {
+color: #0b0;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Pie Chart</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+
+.chart-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.chart {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    animation: rotate 5s linear infinite;
+}
+
+.slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip: rect(0, 50%, 100%, 0);
+    transform-origin: center center;
+    animation: slice 5s linear infinite;
+}
+
+.slice:nth-child(1) {
+    background-color: #008FFB;
+    animation-delay: -0.8s;
+}
+
+.slice:nth-child(2) {
+    background-color: #00E396;
+    animation-delay: -1.6s;
+}
+
+.slice:nth-child(3) {
+    background-color: #FEB019;
+    animation-delay: -2.4s;
+}
+
+.slice:nth-child(4) {
+    background-color: #FF4560;
+    animation-delay: -3.2s;
+}
+
+.slice:nth-child(5) {
+    background-color: #775DD0;
+    animation-delay: -4s;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes slice {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.legend {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.legend li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.color {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.color1 {
+    background-color: #008FFB;
+}
+
+.color2 {
+    background-color: #00E396;
+}
+
+.color3 {
+    background-color: #FEB019;
+}
+
+.color4 {
+    background-color: #FF4560;
+}
+
+.color5 {
+    background-color: #775DD0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <div class="chart">
+            <div class="slice"></div>
+            <div class="slice"></div>
+            <div class="slice"></div>
+            <div class="slice"></div>
+            <div class="slice"></div>
+        </div>
+        <ul class="legend">
+            <li><span class="color color1"></span>Label 1</li>
+            <li><span class="color color2"></span>Label 2</li>
+            <li><span class="color color3"></span>Label 3</li>
+            <li><span class="color color4"></span>Label 4</li>
+            <li><span class="color color5"></span>Label 5</li>
+        </ul>
+    </div>
+
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get chart slices and legend items
+    var slices = document.querySelectorAll('.slice');
+    var legendItems = document.querySelectorAll('.legend li');
+  
+    // Add click event listeners to legend items
+    legendItems.forEach(function(item, index) {
+      item.addEventListener('click', function() {
+        // Toggle active class on clicked legend item
+        this.classList.toggle('active');
+  
+        // Toggle visibility of corresponding chart slice
+        slices[index].classList.toggle('hidden');
+      });
+    });
+  });
+  
+    </script>
+</body>
+</html>
