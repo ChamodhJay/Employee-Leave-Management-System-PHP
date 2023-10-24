@@ -1,4 +1,5 @@
-<?php include('../includes/config.php')?>
+ <!-- <@?php include('../includes/config.php')?>  -->
+
 
 
 <?php
@@ -268,17 +269,21 @@ body {
 </head>
 <body>
 
-  
+
+
+
+
 
 <div class="wrapper">
     <form class="login" id="loginForm" method="POST" onsubmit="return passvalid()">
         <p class="title">Reset Pallet</p>
 
-        <input type="email" name="Remail" id="email"><br>
+        <input type="email" name="Remail" id="email" placeholder="Email id"><br>
         
         <i class="fa fa-envelope" ></i>
 
-        <input type="password" name="Npassword" id="new_password" ><br><i class="fas fa-lock"></i>
+        <input type="password" name="Npassword" id="new_password" placeholder="Password" ><br><i class="fas fa-lock"></i>
+        
         <label id="password-error" class="error-label" style="color:red;"></label>
 
          

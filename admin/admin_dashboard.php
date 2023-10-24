@@ -1,26 +1,35 @@
   <?php include('includes/header.php') ?>
   <?php include('../includes/session.php') ?>
-  
 
-<body>
+
+
+
+  <body>
   	<div class="pre-loader">
-		<div class="pre-loader-box">
-			<div class="loader-logo"><img src="../vendors/images/pulathisi.png " style="width: 70%;height: auto 0%;margin-left: 18%;" alt=""></div>
-			<div class='loader-progress' id="progress_div">
-				<div class='bar' id='bar1'></div>
-			</div>
-			<div class='percent' id='percent1'>0%</div>
-			<div class="loading-text">
-				Loading...
-			</div>
-		</div>
-	</div>
+  		<div class="pre-loader-box">
+  			<div class="loader-logo"><img src="../vendors/images/pulathisi.png " style="width: 70%;height: auto 0%;margin-left: 18%;" alt=""></div>
+  			<div class='loader-progress' id="progress_div">
+  				<div class='bar' id='bar1'></div>
+  			</div>
+  			<div class='percent' id='percent1'>0%</div>
+  			<div class="loading-text">
+  				Loading...
+  			</div>
+  		</div>
+  	</div>
 
   	<?php include('includes/navbar.php') ?>
 
   	<?php include('includes/right_sidebar.php') ?>
 
-  	<?php include('includes/left_sidebar.php') ?>
+  	<!-- <#?php include('includes/left_sidebar.php') ?> -->
+	  <?php include('SideBar/sidebar.php') ?>
+	  <style>
+		<?php include('SideBar/style.css') ?>
+	  </style>
+	  <script>
+		<?php include('SideBar/script.js') ?>
+	  </script>
 
   	<div class="mobile-menu-overlay"></div>
 
@@ -33,7 +42,7 @@
   					</div>
   					<div class="col-md-8" style="margin-top:60px;">
 
-  					  <h4 class="font-20 weight-500 mb-10 text-capitalize" style="font-size: 22px;" >
+  						<h4 class="font-20 weight-500 mb-10 text-capitalize" style="font-size: 22px;">
   							Welcome back Sir..<div class="weight-600 font-30 text-blue"><?php echo $row['FirstName'] . " " . $row['LastName']; ?></div>
   						</h4>
   						<p class="font-18 max-width-600">You are in Pulathisi Leave Manager ..Have a Nice Day!</p>
@@ -186,7 +195,7 @@
 
   						<div id="pie-chart"></div>
 
-						  <?php include '/xampp/htdocs/Leave_staff_demo/admin/includes/retrieve_data.php'; ?>
+  						<?php include '/xampp/htdocs/Leave_staff_demo/admin/includes/retrieve_data.php'; ?>
   						<script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
 
   						<script>

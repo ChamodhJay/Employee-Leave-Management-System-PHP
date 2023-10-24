@@ -28,7 +28,6 @@ if (isset($_POST['signin'])) {
 				echo "<script type='text/javascript'> document.location = 'heads/index.php'; </script>";
 			}
 		}
-
 	} else {
 
 
@@ -50,8 +49,6 @@ if (isset($_POST['signin'])) {
 		echo '}';
 		echo '</style>';
 	}
-
-
 }
 
 
@@ -61,6 +58,28 @@ if (isset($_POST['signin'])) {
 <html>
 
 <head>
+<style>
+  @keyframes logoanim {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  .companylogo {
+    animation-name: logoanim;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+</style>
+
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
 	<title>Pulathisi Leave Manager</title>
@@ -69,6 +88,8 @@ if (isset($_POST['signin'])) {
 	<link rel="icon" type="image/png" sizes="16x16" href="vendors/images/logo16.png">
 	<link rel="stylesheet" href="vendors/styles/stylev.css">
 	<link rel="stylesheet" href="vendors/styles/button.css">
+	<link rel="stylesheet" type="text/css" href="Styles/css/style.css">
+
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -89,15 +110,28 @@ if (isset($_POST['signin'])) {
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
 
+
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 		gtag('js', new Date());
 
 		gtag('config', 'UA-119386393-1');
 	</script>
+
+
+	<style>
+
+
+
+
+	</style>
 
 
 
@@ -106,12 +140,13 @@ if (isset($_POST['signin'])) {
 <body>
 	<img class="wave" src="Login-Form-master/img/wave.png">
 
-	<img class="left" src="Login-Form-master/img/cons.svg">
+	<img class="left" src="Login-Form-master/img/cons.svg" >
 
 
 	<div class="container">
 		<div class="img">
-			<img src="src/images/pulathisi.png">
+			<img src="src/images/pulathisi.png" class="companylogo" >
+
 		</div>
 
 		<div class="login-content">
@@ -120,7 +155,7 @@ if (isset($_POST['signin'])) {
 				<h2 class="name">welcome </h2>
 				<div class="input-div one">
 					<div class="i">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<i class="fa fa-envelope" aria-hidden="true" style="color: #38d39f;"></i>
 					</div>
 					<div class="div">
 						<h5>Email id</h5>
@@ -131,7 +166,7 @@ if (isset($_POST['signin'])) {
 				</div>
 				<div class="input-div pass">
 					<div class="i">
-						<i class="fas fa-lock"></i>
+						<i class="fas fa-lock" style="color: #38d39f;"></i>
 					</div>
 					<div class="div">
 						<h5>Password</h5>
@@ -139,7 +174,7 @@ if (isset($_POST['signin'])) {
 
 					</div>
 				</div>
-				<a href="otp code/index.php">Forgot Password?</a>
+				<!-- <a href="otp code/index.php">Forgot Password?</a> -->
 				<input type="submit" class="btn" name="signin" id="signin" value="Sign In">
 				<div id="error-message" style="color: red;margin-left: 17%;"></div>
 			</form>
@@ -149,51 +184,51 @@ if (isset($_POST['signin'])) {
 
 
 	<script>
-  // Function to validate the form
-  function validateForm() {
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+		// Function to validate the form
+		function validateForm() {
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
 
-    // Check if the username and password are empty
-    if (username.trim() === '' && password.trim() === '') {
-      showError('Please enter both your email id and password.');
-      return false;
-    }
+			// Check if the username and password are empty
+			if (username.trim() === '' && password.trim() === '') {
+				showError('Please enter both your email id and password.');
+				return false;
+			}
 
-    // Check if the username is empty
-    if (username.trim() === '') {
-      showError('Please enter your email id');
-      return false;
-    }
+			// Check if the username is empty
+			if (username.trim() === '') {
+				showError('Please enter your email id');
+				return false;
+			}
 
-    // Check if the password is empty
-    if (password.trim() === '') {
-      showError('Please enter your password');
-      return false;
-    }
+			// Check if the password is empty
+			if (password.trim() === '') {
+				showError('Please enter your password');
+				return false;
+			}
 
-    // Check email validation
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(username)) {
-      showError('Please enter a valid email address.');
-      return false;
-    }
-  }
+			// Check email validation
+			var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!emailRegex.test(username)) {
+				showError('Please enter a valid email address.');
+				return false;
+			}
+		}
 
-  // Function to display error message
-  function showError(message) {
-    var errorDiv = document.getElementById('error-message');
-    errorDiv.innerHTML = message;
-    errorDiv.style.display = 'flex';
-  }
-</script>
+		// Function to display error message
+		function showError(message) {
+			var errorDiv = document.getElementById('error-message');
+			errorDiv.innerHTML = message;
+			errorDiv.style.display = 'flex';
+		}
+	</script>
 
 
 
 
 
 	<!-- js -->
-	<script src="Login-Form-master/js/main.js"></script>
+	<script src="Styles/js/main.js"></script>
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.min.js"></script>
 	<script src="vendors/scripts/process.js"></script>

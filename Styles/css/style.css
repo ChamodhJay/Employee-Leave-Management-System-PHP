@@ -2,44 +2,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-
-	
-}
-
-
-
-
-
-
-img.left{
-
-
-
-	display: flex;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	height: 55%;
-	margin-left: 20px;
-	padding: 0%;
-	margin-right: auto;
-
-}
-
-
-h2.name{
-
-	display: flex;
-	justify-content: center;
-	align-items:center ;
-	font-size:3rem;
-	color:#fff;
-	text-transform: uppercase;
-	letter-spacing:.15em;
-	position: relative;
-	z-index:998;
-	
-
 }
 
 body{
@@ -68,8 +30,6 @@ body{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	
-	
 }
 
 .login-content{
@@ -77,49 +37,11 @@ body{
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
-	margin-left: 10%;
-	
 }
 
 .img img{
-
-	
-	align-items: flex-start;
-	align-self: flex-start;
-	padding: 0%;
-	margin-right: 22%;
-	width: 350px;
-	display: flex;
-	position: fixed;
-
-	filter:grayscale(100%);
-	filter: brightness(0.3);
-	
+	width: 500px;
 }
-
-
-
-
-	/* .saturate { filter: saturate(3); }
-.grayscale { filter: grayscale(100%); }
-.contrast { filter: contrast(160%); }
-.brightness { filter: brightness(0.25); }
-.blur { filter: blur(3px); }
-.invert { filter: invert(100%); }
-.sepia { filter: sepia(100%); }
-.huerotate { filter: hue-rotate(180deg); }
-.rss.opacity { filter: opacity(50%); }
-	 */
-	
-input:-internal-autofill-selected {
-
-	
-		
-		
-
-		border-radius: 50px;
-		max-width: 100%;
-	}
 
 form{
 	width: 360px;
@@ -131,19 +53,17 @@ form{
 
 .login-content h2{
 	margin: 15px 0;
-	color:#32be8f;
+	color: #333;
 	text-transform: uppercase;
 	font-size: 2.9rem;
 }
 
 .login-content .input-div{
-
-	
 	position: relative;
     display: grid;
     grid-template-columns: 7% 93%;
     margin: 25px 0;
-    padding: 8px 0;
+    padding: 5px 0;
     border-bottom: 2px solid #d9d9d9;
 }
 
@@ -200,8 +120,8 @@ form{
 }
 
 .input-div.focus > div > h5{
-	top: -7px;
-	font-size: 14px;
+	top: -5px;
+	font-size: 15px;
 }
 
 .input-div.focus > .i > i{

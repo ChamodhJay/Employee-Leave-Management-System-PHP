@@ -27,11 +27,11 @@
 						</span>
 						<span class="user-name"><?php echo $row['FirstName']. " " .$row['LastName']; ?></span>
 					</a>
-					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+					<!-- <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
 						<a class="dropdown-item" href="my_profile.php"><i class="dw dw-user1"></i> Profile</a>
 						<a class="dropdown-item" href="change_pasword.php"><i class="dw dw-help"></i> Reset Password</a>
 						<a class="dropdown-item" href="../logout.php"><i class="dw dw-logout"></i> Log Out</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			
