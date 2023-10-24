@@ -45,7 +45,7 @@
           <!-- start -->
         
           <li class="item">
-            <a href="admin_dashboard.php" class="nav_link">
+            <a href="index.php" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bx-home-alt"></i>
               </span>
@@ -115,7 +115,7 @@
         <ul class="menu_items">
           <div class="menu_title menu_setting"></div>
           <li class="item">
-            <a href="my_profile.php" class="nav_link">
+            <a href="head_profile.php" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bx-user"></i>
               </span>

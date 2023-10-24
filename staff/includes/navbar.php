@@ -8,7 +8,7 @@
 			<div class="dashboard-setting user-notification">
 				<div class="dropdown">
 					<a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
-						<i class="dw dw-settings2"></i>
+						<!-- <i class="dw dw-settings2"></i> -->
 					</a>
 				</div>
 			</div>
@@ -28,9 +28,9 @@
 						<span class="user-name"><?php echo $row['FirstName']. " " .$row['LastName']; ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-						<a class="dropdown-item" href="staff_profile.php"><i class="dw dw-user1"></i> Profile</a>
+						<!-- <a class="dropdown-item" href="staff_profile.php"><i class="dw dw-user1"></i> Profile</a> -->
 						<!-- <a class="dropdown-item" href="change_pasword.php"><i class="dw dw-help" ></i> Reset Password</a> -->
-						<a class="dropdown-item" href="../logout.php"><i class="dw dw-logout"></i> Log Out</a>
+						<!-- <a class="dropdown-item" href="../logout.php"><i class="dw dw-logout"></i> Log Out</a> -->
 					</div>
 				</div>
 			</div>

@@ -45,51 +45,13 @@
           <!-- start -->
         
           <li class="item">
-            <a href="admin_dashboard.php" class="nav_link">
+            <a href="index.php" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bx-home-alt"></i>
               </span>
               <span class="navlink">Home</span>
             </a>
           </li>
-          <!-- End -->
-
-          <li class="item">
-            <a href="department.php" class="nav_link" id="department">
-              <span class="navlink_icon">
-                <i class="bx bx-buildings"></i>
-              </span>
-              <span class="navlink">Department</span>
-            </a>
-          </li>
-
-          <li class="item">
-            <a href="leave_type.php" class="nav_link" id="department">
-              <span class="navlink_icon">
-                <i class="bx bx-task"></i>
-              </span>
-              <span class="navlink">Leave Type</span>
-            </a>
-          </li>
-
-          <li class="item">
-            <div href="javascript:;" class="nav_link submenu_item">
-              <span class="navlink_icon">
-                <i class="bx bx-user-plus"></i>
-              </span>
-              <span class="navlink">Staff</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-
-            <ul class="menu_items submenu">
-              <a href="add_staff.php" class="nav_link sublink"><i class="bx bx-chevron-right"></i>New Staff</a>
-              <a href="staff.php" class="nav_link sublink"><i class="bx bx-chevron-right"></i>Manage Staff</a>
-
-            </ul>
-          </li>
-          <!-- end -->
-
-          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
           <!-- start -->
           <li class="item">
             <div href="javascript:;" class="nav_link submenu_item">
@@ -102,10 +64,7 @@
 
             <ul class="menu_items submenu">
               <a href="apply_leave.php" class="nav_link sublink"><i class="bx bx-chevron-right"></i>Apply Leave</a>
-              <a href="leaves.php" class="nav_link sublink"><i class="bx bx-chevron-right"></i>All Leave</a>
-              <a href="pending_leave.php" class="nav_link sublink"><i class="bx bx-chevron-right"></i>Pending Leave</a>
-              <a href="approved_leave.php" class="nav_link sublink"><i class="bx bx-chevron-right"></i>Approved Leave</a>
-              <a href="rejected_leave.php" class="nav_link sublink"><i class="bx bx-chevron-right"></i>Rejected Leave</a>
+              <a href="leave_history.php" class="nav_link sublink"><i class="bx bx-chevron-right"></i>Leave History</a>
             </ul>
           </li>
           <!-- end -->
@@ -115,7 +74,7 @@
         <ul class="menu_items">
           <div class="menu_title menu_setting"></div>
           <li class="item">
-            <a href="my_profile.php" class="nav_link">
+            <a href="staff_profile.php" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bx-user"></i>
               </span>
@@ -123,14 +82,14 @@
             </a>
           </li>
 
-          <li class="item">
+          <!-- <li class="item">
             <a href="change.php" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bx-key"></i>
               </span>
               <span class="navlink">Change Password</span>
             </a>
-          </li>
+          </li> -->
     
 
           <li class="item">

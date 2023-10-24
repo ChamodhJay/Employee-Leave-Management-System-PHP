@@ -82,7 +82,13 @@ if (isset($_GET['delete'])) {
 
 	<?php include('includes/right_sidebar.php')?>
 
-	<?php include('includes/left_sidebar.php')?>
+	<?php include('SideBar/sidebar.php') ?>
+	  <style>
+		<?php include('SideBar/style.css') ?>
+	  </style>
+	  <script>
+		<?php include('SideBar/script.js') ?>
+	  </script>
 
 	<div class="mobile-menu-overlay"></div>
 
