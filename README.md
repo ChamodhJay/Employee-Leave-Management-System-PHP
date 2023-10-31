@@ -1,5 +1,7 @@
 # Employee-Leave-Management-System-PHP
 
+![login](https://github.com/ChamodhJay/Employee-Leave-Management-System-PHP/assets/143405992/e719bf3e-287f-47f9-9c4c-8dc5f611ce53)
+![admindashboard](https://github.com/ChamodhJay/Employee-Leave-Management-System-PHP/assets/143405992/d2235926-ef0b-4164-b63e-817456aba3d1)
 
 ## Overview
 
@@ -34,6 +36,4 @@ The Employee Leave Management System is a web-based application designed to stre
 1. Clone the repository:
    ```bash
    git clone https://github.com/ChamodhJay/Employee-Leave-Management-System-PHP.git
-![login](https://github.com/ChamodhJay/Employee-Leave-Management-System-PHP/assets/143405992/e719bf3e-287f-47f9-9c4c-8dc5f611ce53)
-![admindashboard](https://github.com/ChamodhJay/Employee-Leave-Management-System-PHP/assets/143405992/d2235926-ef0b-4164-b63e-817456aba3d1)
 
