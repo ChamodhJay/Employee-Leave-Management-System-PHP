@@ -23,13 +23,13 @@
   	<?php include('includes/right_sidebar.php') ?>
 
   	<!-- <#?php include('includes/left_sidebar.php') ?> -->
-	  <?php include('SideBar/sidebar.php') ?>
-	  <style>
-		<?php include('SideBar/style.css') ?>
-	  </style>
-	  <script>
-		<?php include('SideBar/script.js') ?>
-	  </script>
+  	<?php include('SideBar/sidebar.php') ?>
+  	<style>
+  		<?php include('SideBar/style.css') ?>
+  	</style>
+  	<script>
+  		<?php include('SideBar/script.js') ?>
+  	</script>
 
   	<div class="mobile-menu-overlay"></div>
 
@@ -43,8 +43,15 @@
   					<div class="col-md-8" style="margin-top:60px;">
 
   						<h4 class="font-20 weight-500 mb-10 text-capitalize" style="font-size: 22px;">
-  							Welcome back Sir..<div class="weight-600 font-30 text-blue"><?php echo $row['FirstName'] . " " . $row['LastName']; ?></div>
+  							Welcome back Sir..
+  							<div class="weight-600 font-30 text-blue">
+  								admin01
+  								<!-- <-?php echo $row['FirstName'] . " " . $row['LastName']; ?></div> -->
   						</h4>
+
+
+
+
   						<p class="font-18 max-width-600">You are in Pulathisi Leave Manager ..Have a Nice Day!</p>
   					</div>
   				</div>
@@ -304,14 +311,14 @@
   									<td><?php echo htmlentities($result->LeaveType); ?></td>
   									<td><?php echo htmlentities($result->PostingDate); ?></td>
   									<td><?php $stats = $result->Status;
-											if ($stats == 1) {
-											?>
+										if ($stats == 1) {
+										?>
   											<span style="color: green">Approved</span>
   										<?php }
-											if ($stats == 2) { ?>
+										if ($stats == 2) { ?>
   											<span style="color: red">Rejected</span>
   										<?php }
-											if ($stats == 0) { ?>
+										if ($stats == 0) { ?>
   											<span style="color: blue">Pending</span>
   										<?php } ?>
   									</td>
